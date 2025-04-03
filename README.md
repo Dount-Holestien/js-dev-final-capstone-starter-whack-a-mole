@@ -43,3 +43,28 @@ This project uses [Jest](https://jestjs.io/) with [Puppeteer](https://pptr.dev/)
 
 ```bash
 npm test
+
+
+---
+
+## 🧾 Code Commenting Example
+
+In your `index.js`, start adding comments like this:
+
+```js
+/**
+ * Returns a random integer between min and max
+ */
+function randomInteger(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+/**
+ * Increases score by 1 and updates UI
+ */
+function updateScore() {
+  points += 1;
+  score.textContent = points;
+  return points;
+}
+
